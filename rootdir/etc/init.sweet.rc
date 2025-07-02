@@ -3,7 +3,7 @@ on property:ro.boot.product.vendor.sku=sweet
 
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
     override
-    class hal
+    class early_hal
     user nfc
     group nfc drmrpc system
     disabled
